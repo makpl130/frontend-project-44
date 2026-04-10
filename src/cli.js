@@ -2,9 +2,12 @@ import readlineSync from 'readline-sync';
 
 const getUserName = (message) => {
     const userName = readlineSync.question(`${message} `);
-    console.log(`Hello, ${userName}!`);
-//    return userName;
-    return '';
+    return userName;
+//    return '';
 }
 
-export {getUserName};
+const helloUser = (userName) => {
+    console.log(`Hello, ${userName}!`);
+}
+
+export {getUserName, helloUser};
