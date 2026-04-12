@@ -5,4 +5,8 @@ const getAnswer = (question) => {
     return userAnswer;
 }
 
-export {getAnswer}
+const sendMessage = (message) => {
+    console.log(`${message}`);
+}
+
+export {getAnswer, sendMessage}
